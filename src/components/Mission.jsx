@@ -1,5 +1,5 @@
-import missionImg from "../assets/mission.jpeg";
-import mission from "../assets/mission.mp4";
+// import missionImg from "../assets/mission.jpeg";
+import mission from "../assets/mission.png";
 import { MISSION } from "../constants";
 import { motion } from "framer-motion";
 
@@ -10,20 +10,7 @@ const Mission = () => {
         <h2 className=" mb-8 text-3xl lg:text-4xl">Our Mission</h2>
         {/* mission video */}
         <div className="relative flex items-center justify-center">
-          <motion.video
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="w-full rounded-3xl"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={missionImg}
-          >
-            <source src={mission} type="video/mp4" />
-          </motion.video>
+          <img className="rounded-3xl" src={mission} alt="missionImage" />
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
