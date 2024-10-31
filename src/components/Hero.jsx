@@ -6,7 +6,7 @@ const Hero = () => {
     <section className=" relative flex h-screen items-center justify-center">
       {/* video of hero section */}
       <div className="absolute inset-0 -z-20 h-full w-full overflow-hidden">
-        <img src={hero} alt="" />
+        <img className="h-full w-full object-cover" src={hero} alt="" />
       </div>
 
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-70% to-black"></div>
