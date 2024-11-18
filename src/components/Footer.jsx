@@ -16,7 +16,7 @@ const Footer = () => {
         ))}
       </div>
       <p className=" mt-8 text-center tracking-tighter text-neutral-500">
-        &copy;compiledTab. All rights reseved.
+        &copy;All rights reseved.
       </p>
     </div>
   );
